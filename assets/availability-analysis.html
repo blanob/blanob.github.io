@@ -3700,7 +3700,7 @@ Figure 4: The effect of inspection rate, <span class="math inline">\(\mu^{-1}\)
 <span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>  showindex<span class="op">=</span><span class="va">False</span></span>
 <span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div id="tbl-function-solution" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tags="[]" data-execution_count="5">
+<div id="tbl-function-solution" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="5" data-tags="[]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-function-solution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table 1: Analytical solution subject to varying average inspection duration.
@@ -4399,7 +4399,7 @@ Figure 8: A scatterplot. Simulation runs for 1000 days.
 </div>
 </div>
 </div>
-<p>As we zoom in on the horizontal axis, the simulated unavailability curve is flattened (mostly) for <span class="math inline">\(25 &lt; f^{-1} &lt; 50\)</span>. <a href="#fig-scatter3" class="quarto-xref">Figure 9</a> suggests that system downtime may be indifferent to more frequent inspection plans for some range of <span class="math inline">\(f\)</span>. We will test this hypothesis and examine the results further in the following section.</p>
+<p>As we zoom in on the horizontal axis, the simulated unavailability curve is flattened (mostly) for <span class="math inline">\(25 &lt; f^{-1} &lt; 75\)</span>. <a href="#fig-scatter3" class="quarto-xref">Figure 9</a> suggests that system downtime may be indifferent to more frequent inspection plans for some range of <span class="math inline">\(f\)</span>. We will test this hypothesis and examine the results further in the following section.</p>
 <div id="cell-fig-scatter3" class="cell" data-tags="[]" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
@@ -4431,7 +4431,7 @@ Figure 9: A zoomed-in scatterplot. Simulation runs for 1000 days.
 </div>
 </div>
 </div>
-<p>In <a href="#fig-mean" class="quarto-xref">Figure 10</a>, a local minimum is obtained at <span class="math inline">\(f^{-1}\approx 38.158\)</span> days, with corresponding unavailability of <span class="math inline">\(0.022\)</span>.</p>
+<p>In <a href="#fig-mean" class="quarto-xref">Figure 10</a>, a local minimum is obtained at <span class="math inline">\(f^{-1}\approx 38.158\)</span> days, with corresponding unavailability of <span class="math inline">\(0.019\)</span>.</p>
 <div id="cell-fig-mean" class="cell" data-tags="[]" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
@@ -4523,22 +4523,22 @@ Figure 12: A plot of sample variances in the range <span class="math inline">\(
 </div>
 </div>
 </div>
-<div id="a4c84cbd-b159-40b2-8502-307562e2a367" class="cell" data-tags="[]" data-execution_count="14">
+<div id="a4c84cbd-b159-40b2-8502-307562e2a367" class="cell" data-tags="[]" data-execution_count="18">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample data</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>sample1 <span class="op">=</span> na_val[<span class="dv">30</span>: <span class="dv">40</span>]</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>sample1 <span class="op">=</span> na_val[<span class="dv">20</span>: <span class="dv">30</span>]</span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>sample2 <span class="op">=</span> na_val[<span class="dv">40</span>: <span class="dv">50</span>]</span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform Welch&#39;s t-test</span></span>
 <span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>t_stat, p_value <span class="op">=</span> stats.ttest_ind(sample1, sample2, equal_var<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Comparison of means at </span><span class="sc">{</span><span class="bu">round</span>(small_steps[<span class="dv">3</span>], <span class="dv">3</span>)<span class="sc">}</span><span class="ss"> and </span><span class="sc">{</span><span class="bu">round</span>(small_steps[<span class="dv">4</span>], <span class="dv">3</span>)<span class="sc">}</span><span class="ss"> | T-statistic: </span><span class="sc">{</span>t_stat<span class="sc">}</span><span class="ss">, p-value: </span><span class="sc">{</span>p_value<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Comparison of means at </span><span class="sc">{</span><span class="bu">round</span>(small_steps[<span class="dv">2</span>], <span class="dv">3</span>)<span class="sc">}</span><span class="ss"> and </span><span class="sc">{</span><span class="bu">round</span>(small_steps[<span class="dv">4</span>], <span class="dv">3</span>)<span class="sc">}</span><span class="ss"> | T-statistic: </span><span class="sc">{</span>t_stat<span class="sc">}</span><span class="ss">, p-value: </span><span class="sc">{</span>p_value<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Comparison of means at 28.702 and 38.158 | T-statistic: 0.12381194391207212, p-value: 0.9028954870532429</code></pre>
+<pre><code>Comparison of means at 19.246 and 38.158 | T-statistic: 0.8941750456268369, p-value: 0.3855595583690893</code></pre>
 </div>
 </div>
 <div id="ebd19e4d-bc40-4a0a-969b-0a0b5b2ba059" class="cell" data-tags="[]" data-execution_count="15">
@@ -4557,7 +4557,7 @@ Figure 12: A plot of sample variances in the range <span class="math inline">\(
 <pre><code>Comparison of means at 38.158 and 75.982 | T-statistic: -2.021441053831314, p-value: 0.061903541513097265</code></pre>
 </div>
 </div>
-<p>A p-value of 0.8386 suggests that there is no sufficient evidence to reject the null hypothesis that the two samples of unavailability at <span class="math inline">\(f^{-1}=28.702\)</span> and <span class="math inline">\(f^{-1}=38.158\)</span> have equal means. In fact, at a significance level of <span class="math inline">\(0.05\)</span>, we have no evidence to conclude that a system subject to <span class="math inline">\(38.158\)</span> days per inspection and <span class="math inline">\(75.982\)</span> days per inspection results in different (if not better) availability. This suggests, in terms of the cost efficiency of optimal inspection and maintenance solution, both analytical solution and simulated solution via Monte Carlo method may give sub-optimal results.</p>
+<p>A p-value of <span class="math inline">\(0.3856\)</span> suggests that there is no sufficient evidence to reject the null hypothesis that the two samples of unavailability at <span class="math inline">\(f^{-1}=19.246\)</span> and <span class="math inline">\(f^{-1}=38.158\)</span> have equal means. In fact, at a significance level of <span class="math inline">\(0.05\)</span>, we have no evidence to conclude that a system subject to <span class="math inline">\(38.158\)</span> days per inspection and <span class="math inline">\(75.982\)</span> days per inspection results in different (if not better) availability. This suggests, in terms of the cost efficiency of optimal inspection and maintenance solution, both analytical solution and simulated solution via Monte Carlo method may give sub-optimal results.</p>
 <p>As discovered in <span class="math inline">\(\S3.3\)</span>, the optimal inspection frequency decreases as each inspection takes a longer span of time. This consequently prolongs system downtime and gives rise to higher rate of unavailability. In <a href="#fig-simulation-contour" class="quarto-xref">Figure 13</a> we come to the same conclusion about the effect of inspection duration on the optimal choice of inspection frequency and its resulting unavailability.</p>
 <p>A list of simulated solutions subject to various inspection rate <span class="math inline">\(\mu\)</span> is also shown in <a href="#tbl-simulation-solution" class="quarto-xref">Table 2</a>.</p>
 <div id="cell-fig-simulation-contour" class="cell" data-tags="[]" data-execution_count="16">
@@ -4647,7 +4647,7 @@ Figure 13: The effect of inspection rate <span class="math inline">\(\mu\)</spa
 <span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>  showindex<span class="op">=</span><span class="va">False</span></span>
 <span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div id="tbl-simulation-solution" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tags="[]" data-execution_count="17">
+<div id="tbl-simulation-solution" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="17" data-tags="[]">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simulation-solution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table 2: Simulated solution via Monte Carlo method subject to varying average inspection duration.
