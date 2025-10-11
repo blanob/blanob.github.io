@@ -4,6 +4,8 @@ title: J. Donald Tang
 nositetitle: true
 ---
 
+<img src="lighthouse-small.jpg">
+
 I recently graduated from UCL Statistical Science and am enjoying freedom.
 
 # Work
