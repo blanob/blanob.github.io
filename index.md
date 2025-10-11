@@ -16,7 +16,7 @@ May 28, 2025</i> - [ucl-stat0045](https://blanob.github.io/assets/anova.pdf)
 
 # Notes
 
-Under Construction <img src="construction.gif" width="200" >
+Under Construction <img src="construction.gif" width="50" >
 
 # Link
 
