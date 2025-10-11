@@ -14,7 +14,7 @@ March 21, 2025 - [ucl-stat0009](https://blanob.github.io/assets/availability-ana
 
 May 1, 2025 - [ucl-stat0045](https://blanob.github.io/assets/data-ethics.pdf)
 
-May 28, 2025</i> - [ucl-stat0045](https://blanob.github.io/assets/anova.pdf)
+May 28, 2025 - [ucl-stat0045](https://blanob.github.io/assets/anova.pdf)
 
 # Notes
 
