@@ -27,8 +27,7 @@ collections:
 # -----------------------------------------------------------------------------
 # Excludes
 # -----------------------------------------------------------------------------
-# exclude:
-#  - README.md
-#  - Gemfile
-#  - Gemfile.lock
-#  - vendor
+ exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
