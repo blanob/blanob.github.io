@@ -1,0 +1,15 @@
+title: 'blanob'
+url: https://blanob.github.io
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+permalink: /:title/
+future: true
+timezone: America/New_York
+
+collections:
+  'work':
+    output: true
