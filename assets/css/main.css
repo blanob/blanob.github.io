@@ -15,7 +15,7 @@
 html {
 /*  font-size: 14px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: 'Noto Sans JP', "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14pt;
   line-height: 1.5;
 }
@@ -209,6 +209,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
 /* Elements */
@@ -312,6 +313,10 @@ input[type=checkbox]:checked ~ .menu-label:after {
     text-align: initial;
   }
 
+  input[type=checkbox]:checked ~ .trigger {
+    display: inline;
+  }
+
   .nav-link {
     display: initial;
   }
@@ -368,6 +373,9 @@ input[type=checkbox]:checked ~ .menu-label:after {
   h1.title { text-align: center; }
   h1, h2, h3, h4, h5, h6 { break-after: avoid-page; page-break-after: avoid; }
   #content hr:last-of-type { display: none; }
-  #content pre { break-inside: avoid-page; page-break-inside: avoid; }
+  #content pre { break-inside: avoid-page; page-break-inside: avoid; white-space: pre-wrap; }
   #content div.small:last-of-type { display: none; }
+  a[href^="https://"]::after, a[href^="http://"]::after {
+    content: "("attr(href)")"; font-family: monospace; margin: 0 .25em;
+  }
 }
