@@ -1,12 +1,12 @@
 ---
 layout: page
-title: J. Donald Tang
+title: Donald Tang
 nositetitle: true
 ---
 
 <img src="lighthouse-small.jpg">
 
-I recently graduated from UCL Statistical Science and am enjoying freedom.
+I recently graduated from Statistical Science at UCL and am enjoying freedom.
 
 # Work
 
