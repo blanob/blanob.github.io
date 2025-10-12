@@ -1,5 +1,9 @@
+/* Copyright (c) 2017 Anish Athalye, Makoto Shimazu */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+/* Basic styling */
 
 * {
   box-sizing: border-box;
@@ -9,9 +13,18 @@
 }
 
 html {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: clamp(14px, 2vw, 18px);
+/*  font-size: 14px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Noto Sans JP', "Source Sans Pro", sans-serif;
+  font-size: 14pt;
   line-height: 1.5;
+}
+
+@media(min-width: 480px) {
+  html {
+    /*font-size: 16px;*/
+    font-size: 14pt;
+  }
 }
 
 body {
@@ -24,43 +37,79 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: bold;
+  /*text-decoration: underline;*/
   line-height: 1.25;
   font-size: 1rem;
 }
 
-h1 { margin-top: 1.25rem; font-size: clamp(1.5rem, 3vw, 2.25rem); }
-h2 { margin-top: 1.25rem; font-size: clamp(1.1rem, 2vw, 1.5rem); }
+h1 {
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+}
 
-p { margin-bottom: 1rem; }
+h2 {
+  margin-top: 1.25rem;
+  font-size: 1.1rem;
+}
 
-strong { font-weight: bold; }
-em { font-style: italic; }
-
-ul, ol {
+p {
+  margin-top: 0;
   margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
   list-style-position: inside;
   padding-left: 1rem;
+}
+
+ol {
+  margin-left: 1rem;
+}
+
+li > ul {
+  padding-left: 2rem;
 }
 
 ul li {
   list-style-type: none;
 }
 
+ul, ol {
+  margin-bottom: 1rem;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+  margin-bottom: inherit;
+}
+
 ul li:before {
-  content: "\2013  ";
+  content: "\2013  "; /* note: extra space needed because first is consumed by css parser */
   position: absolute;
   margin-left: -1rem;
 }
 
+ul.double-spaced li {
+  margin-top: 1rem;
+}
+
 pre, code {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", "Menlo", "DejaVu Sans Mono", "Lucida Console", monospace;
 }
 
 code {
   background-color: rgba(27,31,35,.05);
   border-radius: 3px;
   padding: 0 0.2rem;
-  font-size: 0.85rem;
+  /*font-size: 0.9em;*/
+  font-size: 12pt;
 }
 
 pre {
@@ -68,7 +117,8 @@ pre {
   margin: 1rem;
   padding: 0.5rem 0.7rem;
   border: 1px dashed #444;
-  font-size: 0.8rem;
+  /*font-size: .8rem;*/
+  font-size: 11pt;
   overflow-x: auto;
 }
 
@@ -91,20 +141,77 @@ a:hover {
 
 img, video {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   max-width: 100%;
   max-height: 80vh;
 }
 
-video { margin-bottom: 1rem; }
+video {
+  margin-bottom: 1rem;
+}
 
-.title { font-size: 2rem; }
-.subtitle { font-size: 1.5rem; margin-left: 1rem; }
-.small { font-size: 0.75rem; }
-.center { text-align: center; }
-.gap { margin-top: 4rem; margin-bottom: 4rem; }
-.accent { color: #8c0038; }
+summary {
+  outline: none;
+  user-select: none;
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+/* Classes */
+
+.title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.small {
+  font-size: 0.75rem;
+}
+
+.small p {
+  margin-bottom: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.gap {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.accent {
+  color: #8c0038;
+}
+
+.youtube-wrapper {
+  position: relative;
+  height: 0;
+  margin-bottom: 1rem;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Elements */
 
 #content {
   max-width: 35rem;
@@ -113,9 +220,15 @@ video { margin-bottom: 1rem; }
   padding: 1rem 1rem 0 1rem;
 }
 
+.demo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 #nav-bg {
+  margin: 0;
   padding: 0.25rem 1rem;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", "Menlo", "DejaVu Sans Mono", "Lucida Console", monospace;
   background: #54008c;
   color: #fff;
 }
@@ -136,17 +249,29 @@ video { margin-bottom: 1rem; }
   background-color: #fff;
 }
 
-a#logo { color: #f2deff; }
-a:hover#logo { color: #000; }
+a#logo {
+  color: #f2deff;
+}
 
-/* --- Mobile nav behavior --- */
+a:hover#logo {
+  color: #000;
+}
 
-#menu-icon { display: none; }
+#menu-icon {
+  display: none;
+}
+
+.trigger {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ .trigger {
+  display:block;
+  margin: auto;
+}
 
 .menu-label {
-  display: block;
-  cursor: pointer;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", "Menlo", "DejaVu Sans Mono", "Lucida Console", monospace;
 }
 
 input[type=checkbox] ~ .menu-label:after {
@@ -157,33 +282,25 @@ input[type=checkbox]:checked ~ .menu-label:after {
   content: "(-)";
 }
 
-/* Hide nav links until menu toggled */
-.trigger {
-  display: none;
-}
-
-input[type=checkbox]:checked ~ .trigger {
+.nav-link {
   display: block;
-  margin: auto;
 }
 
 .trigger-child {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-}
-
-.nav-link {
-  display: block;
+  display: inline-block;
+  text-align: initial;
 }
 
 .nav-link:before {
   content: "- ";
 }
 
+/* in terms of our fixed-width layout; if smaller than this, we want to
+ * collapse the menu */
 @media (min-width: 40rem) {
-  .menu-label { display: none; }
+  .menu-label {
+    display: none;
+  }
 
   .trigger {
     display: inline;
@@ -195,10 +312,6 @@ input[type=checkbox]:checked ~ .trigger {
     text-align: initial;
   }
 
-  input[type=checkbox]:checked ~ .trigger {
-    display: inline;
-  }
-
   .nav-link {
     display: initial;
   }
@@ -208,18 +321,42 @@ input[type=checkbox]:checked ~ .trigger {
   }
 }
 
-/* Dark mode */
-
 @media (prefers-color-scheme: dark) {
-  body { background-color: #303030; color: #ddd; }
-  a { color: #66D9EF; text-decoration: none; }
-  a:hover { color: #000; background-color: #66D9EF; }
-  h1, h2, h3, h4, h5, h6 { color: #eee; }
-  #nav-bg, a#logo, #top-nav a { background-color: #A6E22E; color: #202020; }
-  .accent { color: #F92672; }
-}
 
-/* Print styles */
+    body {
+        background-color: #303030;
+        color: #ddd
+    }
+
+    a {
+      color: #66D9EF;
+      /*color: #A6E22E;*/
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #000;
+      background-color: #66D9EF;
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #eee;
+      }
+
+    #nav-bg, a#logo, #top-nav a {
+      background-color: #A6E22E;
+      color: #202020;
+    }
+
+    a:hover > code  {
+        background-color: #66D9EF;
+    }
+
+    .accent {
+        color: #F92672;
+    }
+}
 
 @media print {
   #nav-bg, #logo, #top-nav { display: none; }
@@ -229,14 +366,8 @@ input[type=checkbox]:checked ~ .trigger {
   body { background: none; }
   #content { max-width: none; }
   h1.title { text-align: center; }
-  h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; page-break-after: avoid; }
   #content hr:last-of-type { display: none; }
-  #content pre { page-break-inside: avoid; white-space: pre-wrap; }
+  #content pre { break-inside: avoid-page; page-break-inside: avoid; }
   #content div.small:last-of-type { display: none; }
-  a[href^="https://"]::after,
-  a[href^="http://"]::after {
-    content: "(" attr(href) ")";
-    font-family: monospace;
-    margin: 0 .25em;
-  }
 }
