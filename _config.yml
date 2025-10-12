@@ -1,0 +1,34 @@
+# -----------------------------------------------------------------------------
+# Setup
+# -----------------------------------------------------------------------------
+title: 'blanob's page'
+url: https://blanob.github.io
+
+# -----------------------------------------------------------------------------
+# Settings
+# -----------------------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+permalink: /:title/
+future: true
+timezone: America/New_York
+
+collections:
+  'work':
+    output: true
+#  'notes':
+#    output: true
+#  'archive':
+#    output: true
+
+# -----------------------------------------------------------------------------
+# Excludes
+# -----------------------------------------------------------------------------
+# exclude:
+#  - README.md
+#  - Gemfile
+#  - Gemfile.lock
+#  - vendor
