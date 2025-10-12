@@ -10,7 +10,7 @@
 
 html {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 14pt;
+  font-size: clamp(14px, 2vw, 18px);
   line-height: 1.5;
 }
 
@@ -28,8 +28,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
-h1 { margin-top: 1.25rem; font-size: 1.5rem; }
-h2 { margin-top: 1.25rem; font-size: 1.1rem; }
+h1 { margin-top: 1.25rem; font-size: clamp(1.5rem, 3vw, 2.25rem); }
+h2 { margin-top: 1.25rem; font-size: clamp(1.1rem, 2vw, 1.5rem); }
 
 p { margin-bottom: 1rem; }
 
@@ -60,7 +60,7 @@ code {
   background-color: rgba(27,31,35,.05);
   border-radius: 3px;
   padding: 0 0.2rem;
-  font-size: 12pt;
+  font-size: 0.85rem;
 }
 
 pre {
@@ -68,7 +68,7 @@ pre {
   margin: 1rem;
   padding: 0.5rem 0.7rem;
   border: 1px dashed #444;
-  font-size: 11pt;
+  font-size: 0.8rem;
   overflow-x: auto;
 }
 
