@@ -22,12 +22,12 @@ Under Construction <img src="construction.gif" width="50" >
 
 # Link
 
-To GitHub [@blanob](https://github.com/blanob)
+To GitHub [@blanob](https://github.com/blanob/)
 
 ---
 
 <div class="small center">
 <p><a href="https://github.com/blanob/blanob.github.io/">Source code</a>.</p>
-<p>Licensed under CC BY-NC-SA.</p>
+<p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>.</p>
 <p>Page last updated: October 10, 2025.</p>
 </div>
