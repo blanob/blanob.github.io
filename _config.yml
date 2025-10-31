@@ -13,3 +13,5 @@ timezone: America/New_York
 collections:
   'work':
     output: true
+  'archive':
+    output: true
