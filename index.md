@@ -24,7 +24,14 @@ Under Construction <img src="construction.gif" width="50" >
 
 To GitHub [@blanob](https://github.com/blanob/)
 
----
+<hr>
+
+<pre>
+Jinzhou Tang                                   School of Mathematics and Statistics
+jinzhou.tang[at]student.unimelb.edu.au         The University of Melbourne, Parkville VIC 3010, Australia
+</pre>
+
+<hr>
 
 <div class="small center">
 <p><a href="https://github.com/blanob/blanob.github.io/">Source code</a>.</p>
