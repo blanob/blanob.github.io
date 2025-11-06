@@ -4,7 +4,7 @@ title: Donald Tang
 nositetitle: true
 ---
 
-<img src="lighthouse-small.jpg">
+[<img src="lighthouse-small.jpg">](https://blanob.github.io/contact)
 
 I recently graduated from Statistical Science at UCL and am enjoying freedom.
 
@@ -23,13 +23,6 @@ Under Construction <img src="construction.gif" width="50" >
 # Link
 
 To GitHub [@blanob](https://github.com/blanob/)
-
-<hr>
-
-<pre>
-Jinzhou Tang                                   School of Mathematics and Statistics
-jinzhou.tang[at]student.unimelb.edu.au         The University of Melbourne, Parkville VIC 3010, Australia
-</pre>
 
 <hr>
 
