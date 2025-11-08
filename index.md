@@ -24,6 +24,9 @@ Under Construction <img src="construction.gif" width="50" >
 
 To GitHub [@blanob](https://github.com/blanob/)
 
+To [Bloomberg](https://www.bloomberg.co.jp/)
+
+To [Webb-site](https://webb-site.com/)
 <hr>
 
 <div class="small center">
