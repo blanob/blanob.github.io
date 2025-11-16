@@ -24,6 +24,8 @@ Under Construction <img src="construction.gif" width="50" >
 
 To GitHub [@blanob](https://github.com/blanob/)
 
+To bilibili [@blanobson](https://space.bilibili.com/327391613)
+
 To [Bloomberg](https://www.bloomberg.co.jp/)
 
 To [Webb-site](https://webb-site.com/)
