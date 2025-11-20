@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Donald Tang
+title: Donald's page
 nositetitle: true
 ---
 
@@ -20,7 +20,7 @@ May 28, 2025 - [ucl-stat0045](https://blanob.github.io/assets/anova.pdf)
 
 Under Construction <img src="construction.gif" width="50" >
 
-# Link
+# Links
 
 To GitHub [@blanob](https://github.com/blanob/)
 
