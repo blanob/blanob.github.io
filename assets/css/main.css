@@ -212,6 +212,13 @@ hr {
   border: 0;
 }
 
+.construction {
+  display: block;
+  padding: .5em 1em;
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 2px solid #54008c;
+}
+
 /* Elements */
 
 #content {
