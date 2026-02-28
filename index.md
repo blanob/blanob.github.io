@@ -18,7 +18,7 @@ I recently graduated from Statistical Science at UCL and am ~~enjoying freedom~~
 
 # Notes
 
-Under construction <img src="construction.gif" width="50" >
+Under construction <img src="assets/under_construction.gif" width="50" >
 
 # Links
 
