@@ -39,5 +39,5 @@ To [Webb-site.com](https://webb-site.com/)
 <div class="small center">
 <p><a href="https://github.com/blanob/blanob.github.io/">Source code</a>.</p>
 <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>.</p>
-<p>Page last updated: March 11, 2025.</p>
+<p>Page last updated: March 11, 2026.</p>
 </div>
