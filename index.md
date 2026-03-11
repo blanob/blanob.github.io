@@ -6,9 +6,14 @@ nositetitle: true
 
 [<img src="lighthouse-small.jpg">](https://www.sussex.ac.uk/geography/researchprojects/coastview/Belle_Tout/belle_tout.htm "Beachy Head, East Sussex (2023)")
 
-I recently graduated from Statistical Science at UCL and am ~~enjoying freedom~~ now back to school again.
+I ~~recently~~ graduated from Statistical Science at UCL and am ~~enjoying freedom~~ now back to school again.
 
-# Work
+I live and work in the Maths and Stats School, Parkville VIC 3010. I'm trying to get access to Peter Hall Building's G12/13. Can someone help?
+
+
+# Updates
+
+- 03/11/26: I got a disposable camera a while ago. Here's [how it went](https://blanob.github.io/archive/my-kodak-funsaver).
 
 - 03/21/25: [ucl-stat0009](https://blanob.github.io/assets/availability-analysis.html)
 
@@ -34,5 +39,5 @@ To [Webb-site.com](https://webb-site.com/)
 <div class="small center">
 <p><a href="https://github.com/blanob/blanob.github.io/">Source code</a>.</p>
 <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>.</p>
-<p>Page last updated: December 11, 2025.</p>
+<p>Page last updated: March 11, 2025.</p>
 </div>
