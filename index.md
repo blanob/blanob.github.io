@@ -13,6 +13,8 @@ I live and work in the Maths and Stats School, Parkville VIC 3010. I'm trying to
 
 # Updates
 
+- 04/02/26: Happy Easter! I'm running for the Board, Representative and Faculty Council of GSA. [Read more](https://gsa.unimelb.edu.au/donald-tang/).
+
 - 03/11/26: I got a disposable camera a while ago. Here's [how it went](https://blanob.github.io/archive/my-kodak-funsaver).
 
 - 03/21/25: [ucl-stat0009](https://blanob.github.io/assets/availability-analysis.html)
@@ -39,5 +41,5 @@ To [Webb-site.com](https://webb-site.com/)
 <div class="small center">
 <p><a href="https://github.com/blanob/blanob.github.io/">Source code</a>.</p>
 <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>.</p>
-<p>Page last updated: March 11, 2026.</p>
+<p>Page last updated: April 2, 2026.</p>
 </div>
