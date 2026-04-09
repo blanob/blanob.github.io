@@ -27,7 +27,7 @@ I live and work in the Maths and Stats School, Parkville VIC 3010. I'm trying to
 
 # Notes
 
-Under construction <img src="assets/under_construction.gif" width="50" >
+<img src="./assets/jackhammer.gif" height=15> `under construction` <img src="./assets/jackhammer.gif" height=15>
 
 # Links
 
@@ -43,5 +43,5 @@ To [Webb-site.com](https://webb-site.com/)
 <div class="small center">
 <p><a href="https://github.com/blanob/blanob.github.io/">Source code</a>.</p>
 <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>.</p>
-<p>Page last updated: April 2, 2026.</p>
+<p>Page last updated: April 9, 2026.</p>
 </div>
