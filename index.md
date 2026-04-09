@@ -27,7 +27,9 @@ I live and work in the Maths and Stats School, Parkville VIC 3010. I'm trying to
 
 # Notes
 
-<img src="./assets/jackhammer.gif" height=15> `under construction` <img src="./assets/jackhammer.gif" height=15>
+<img align="left" width="25" height="25" src="./assets/jackhammer.gif">
+UNDER CONSTRUCTION
+<br clear="left"/>
 
 # Links
 
