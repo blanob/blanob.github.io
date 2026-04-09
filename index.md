@@ -13,6 +13,8 @@ I live and work in the Maths and Stats School, Parkville VIC 3010. I'm trying to
 
 # Updates
 
+- 04/09/26: This week I made a [long overdue visit](https://blanob.github.io/archive/april-in-canberra) to Canberra. To see my friend and his work at Mount Stromlo.
+
 - 04/02/26: Happy Easter! I'm running for the Board, Representative and Faculty Council of GSA. [Read more](https://gsa.unimelb.edu.au/donald-tang/).
 
 - 03/11/26: I got a disposable camera a while ago. Here's [how it went](https://blanob.github.io/archive/my-kodak-funsaver).
