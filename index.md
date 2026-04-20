@@ -35,6 +35,8 @@ UNDER CONSTRUCTION
 
 To GitHub [@blanob](https://github.com/blanob/)
 
+To Instagram [@blanobson](https://www.instagram.com/blanobson/)
+
 To bilibili [@blanobson](https://space.bilibili.com/327391613)
 
 To [Bloomberg](https://www.bloomberg.co.jp/)
@@ -45,5 +47,5 @@ To [Webb-site.com](https://webb-site.com/)
 <div class="small center">
 <p><a href="https://github.com/blanob/blanob.github.io/">Source code</a>.</p>
 <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>.</p>
-<p>Page last updated: April 9, 2026.</p>
+<p>Page last updated: April 20, 2026.</p>
 </div>
